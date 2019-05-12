@@ -17,6 +17,13 @@ h1, h2, h3, h4, h5, h6, p, body {
 /*  }*/
 /*}*/
 
+  @media screen and (max-width: 731px){
+    .hide-on-med-and-down {display:none;}
+}
+
+  @media screen and (min-width: 731px){
+    .sidenav-fixed {display:none;}
+}
 .contents {
   text-align: center;
 }
