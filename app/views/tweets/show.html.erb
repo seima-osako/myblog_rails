@@ -1,0 +1,15 @@
+<div class="contents row" >
+    <div class="content_post">
+      <%= simple_format(@tweet.text) %>
+      <% if user_signed_in? && current_user.id == @tweet.user_id %>
+          <ul class="more_list">
+            <li>
+              <%= link_to 'edit', "/tweets/#{@tweet.id}/edit", method: :get %>
+            </li>
+            <li>
+              <%= link_to "destroy", "/tweets/#{@tweet.id}", method: :delete %>
+            </li>
+          </ul> 
+      <% end %>
+    </div>
+</div>

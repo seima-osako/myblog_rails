@@ -1,0 +1,24 @@
+<div class="row">
+  <%= form_tag('/tweets', method: :post) do %>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s11" style="width: 65%;">
+          <input type="text" name="text" id="hoge">
+          <label for="hoge">TEXT</label>
+          <input type="submit" value="SENT">
+        </div>
+      </div>
+    </form>
+  <% end %>
+</div>
+
+<style>
+
+  input[type="submit"] {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 5px;
+    background-color: #ee6e73;
+  }
+  
+</style>
