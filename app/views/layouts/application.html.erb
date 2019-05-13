@@ -36,6 +36,7 @@
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons" style="font-size:10px;">mene</i></a>
       </div>
     </nav>
+    
     <% if user_signed_in? %>
       <ul id="slide-out" class="sidenav sidenav-fixed">
         <li><%= link_to "LogOut", destroy_user_session_path, method: :delete %></li>
